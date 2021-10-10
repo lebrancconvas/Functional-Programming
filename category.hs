@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 ftype :: Int -> Int 
 ftype x  = x + 1
 
