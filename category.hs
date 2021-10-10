@@ -1,3 +1,8 @@
-ftype :: Int -> Int -> Int
-ftype x y = x + y
-main = print(ftype 99 99)
+ftype :: Int -> Int 
+ftype x  = x + 1
+
+gtype :: Int -> Int -> Int
+gtype a b = a * b
+main = do
+  print(ftype 99)
+  print(gtype 99 99) 
