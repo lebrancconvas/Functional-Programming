@@ -1,5 +1,2 @@
-.vscode 
-*.hi
-*.o
-main  
-category 
+*
+!*.hs
