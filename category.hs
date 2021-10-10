@@ -25,6 +25,9 @@ checkweekend :: String -> Bool
 checkweekend day | day == "Sunday" || day == "Saturday" = True 
                  | otherwise = False 
 
+composingweekend :: Integer -> Bool 
+composingweekend number = checkweekend(checkday number) 
+
 roots :: (Float, Float, Float) -> (Float, Float) 
 roots (a, b, c) = (x1, x2) where
   x1 = e + sqrt(d / 2*a)
@@ -39,4 +42,5 @@ main = do
   print(fact 5) 
   print(checkday 2)
   print(checkweekend "Saturday") 
+  print(composingweekend 1)  
   print(roots(1,2,1)) 
