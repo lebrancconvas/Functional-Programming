@@ -1,4 +1,3 @@
-main :: IO ()
-main = do
-  let num = 999
-  print num
+ftype :: Int -> Int -> Int
+ftype x y = x + y
+main = print(ftype 99 99)
