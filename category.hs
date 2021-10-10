@@ -21,6 +21,10 @@ checkday numday | numday == 1 = "Sunday"
                 | numday == 6 = "Friday" 
                 | numday == 7 = "Saturday"
 
+checkweekend :: String -> Bool 
+checkweekend day | day == "Sunday" || day == "Saturday" = True 
+                 | otherwise = False 
+
 roots :: (Float, Float, Float) -> (Float, Float) 
 roots (a, b, c) = (x1, x2) where
   x1 = e + sqrt(d / 2*a)
@@ -34,4 +38,5 @@ main = do
   print(htype 99 98)
   print(fact 5) 
   print(checkday 2)
+  print(checkweekend "Saturday") 
   print(roots(1,2,1)) 
