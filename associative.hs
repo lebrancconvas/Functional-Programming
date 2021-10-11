@@ -26,6 +26,6 @@ main :: IO ()
 main = do
   let x = 99 
   if hogof x == hogof2 x then
-    putStrLn "Associative is True."
+    putStrLn "Associative Property is True."
   else
-    putStrLn "Associative is False." 
+    putStrLn "Associative Property is False." 
