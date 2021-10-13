@@ -24,7 +24,7 @@ hogof2 x = hog(f x)
 
 main :: IO ()
 main = do
-  let x = 99 
+  let x = 99   
   if hogof x == hogof2 x then
     putStrLn "Associative Property is True."
   else
