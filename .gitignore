@@ -1,6 +1,6 @@
-*
-!*.hs
-!*.scala 
-!*.ex
-!*.exs 
-!*.clj 
+.elixir_ls
+.metals
+.vscode
+*.hi
+*.o
+*.class 
