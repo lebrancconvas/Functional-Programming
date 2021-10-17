@@ -13,3 +13,11 @@ else
   IO.puts("Level: #{level}")
   IO.puts("Experience: #{exp}")
 end
+
+
+manapoint = 1000
+cond do
+  manapoint < 100 -> IO.puts("Fire of World.")
+  manapoint >= 100 -> IO.puts("Flying Machine.")
+  true -> IO.puts("Mysterious Machine")
+end
