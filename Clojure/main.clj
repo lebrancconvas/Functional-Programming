@@ -5,4 +5,13 @@
   (println x)
   (println y)	)
 
+(defn condition []
+  (if (> 2 3)
+    (println "It is OK.")
+    (println "OH! Interested.") 
+  )
+)
+
+
 (command) 
+(condition)
