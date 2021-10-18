@@ -1,6 +1,8 @@
 .elixir_ls
 .metals
 .vscode
+.clj-kondo
+tempCodeRunnerFile.*
 *.hi
 *.o
 *.class 
