@@ -48,3 +48,36 @@ let natNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(natNumber.filter(x => x % 2 == 0)); // Filter The Elements that is even numbers. 
 console.log(natNumber.map(x => x * 2)); // Map *2 to every element. 
 console.log(natNumber.reduce((x, y) => x + y)); // Find the sum of every elements in array.
+
+//Other Built-In Higher-Order Function. 
+const people = [{
+    name: "Josh",
+    atk: 12
+}, {
+    name: "Macky",
+    atk: 20
+}, {
+    name: "Bravo",
+    atk: 50
+}]
+
+//forEach 
+people.forEach(member => {
+    console.log(`${member.name}: ${member.atk}`)
+})
+
+//find 
+const highPeople = people.find(member => member.atk > 30);
+console.log(highPeople);
+
+//findIndex
+const highPeopleIndex = people.findIndex(member => member.atk > 30);
+console.log(highPeopleIndex);
+
+//every
+const isNoob = people.every(member => member.atk < 20);
+console.log(isNoob);
+
+//some 
+const hasNoob = people.some(member => member.atk < 20);
+console.log(hasNoob);
