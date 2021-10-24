@@ -43,3 +43,8 @@ function multiplier(add, a, b) {
 }
 
 console.log(multiplier(addModifier, 1, 2));
+
+let natNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(natNumber.filter(x => x % 2 == 0)); // Filter The Elements that is even numbers. 
+console.log(natNumber.map(x => x * 2)); // Map *2 to every element. 
+console.log(natNumber.reduce((x, y) => x + y)); // Find the sum of every elements in array.
