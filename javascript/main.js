@@ -81,3 +81,32 @@ console.log(isNoob);
 //some 
 const hasNoob = people.some(member => member.atk < 20);
 console.log(hasNoob);
+
+function myFilter(array, callBack) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (callBack() === true) {
+
+        }
+    }
+}
+
+function outer() {
+    const name = "outer";
+    return function inner() {
+        console.log(`Outer Name: ${name}`);
+    }
+}
+
+const innerFunction = outer();
+innerFunction();
+
+let counter = 0;
+
+function useCounter() {
+    counter++;
+    console.log(`Counter: ${counter}`);
+}
+
+useCounter();
+useCounter();

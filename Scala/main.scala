@@ -1,5 +1,5 @@
-object main {
+object Main {
 	def main(args: Array[String]) {
-		println("Hello.") 
+		println("Meow")
 	}
 }
